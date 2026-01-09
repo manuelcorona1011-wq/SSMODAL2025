@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SS Ｍｏｄａｌ 2025</title>
+<img src="IMG_0146.PNG" height="150" width="1440">
+<br><br>
+<img src="IMG_0146.PNG" height="150" width="1440">
+<br><br>
+<img src="IMG_0146.PNG" height="150" width="1440">
+<br><br>
+<img src="IMG_0146.PNG" height="150" width="1440">
+<br><br>
+<img src="IMG_0146.PNG" height="150" width="1440">
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f9f9f9;
+    }
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .header-img {
+      width: 100%;
+      max-width: 1440px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 24px;
+    }
+    .form-section {
+      margin-top: 16px;
+      width: 100%;
+      max-width: 350px;
+    }
+    .form-section label {
+      display: block;
+      margin-top: 8px;
+    }
+    .form-section input[type="text"], 
+    .form-section input[type="number"] {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .form-section button {
+      margin-top: 16px;
+      padding: 10px 24px;
+      border: none;
+      background: #222;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <img src="IMG_0142.png" alt="SS Manuelalejandro 2025 Top" width="500" height="1000">
+    <h2>SS Manuelalejandro 2025 Top</h2>
+    <p>Price: 150$</p>
+    <form class="form-section">
+      <label for="size">Size:</label>
+      <select id="size" name="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male" style="display:inline;">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female" style="display:inline;">Female</label>
+      <hr>
+      <label>Payment Method:</label>
+      <input type="radio" id="card" name="payment" value="card" checked>
+      <label for="card" style="display:inline;">Card</label>
+      <input type="radio" id="applepay" name="payment" value="applepay">
+      <label for="applepay" style="display:inline;">Apple Pay</label>
+      <input type="radio" id="paypal" name="payment" value="paypal">
+      <label for="paypal" style="display:inline;">PayPal</label>
+      <input type="radio" id="stripe" name="payment" value="stripe">
+      <label for="stripe" style="display:inline;">Stripe</label>
+      <div id="card-info">
+        <label for="cardnumber">Card Number:</label>
+        <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456">
+        <label for="expiry">Expiry Date:</label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+        <label for="cvc">CVC:</label>
+        <input type="number" id="cvc" name="cvc" placeholder="123">
+      </div>
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+  <script>
+    // Show/hide card info fields based on payment method
+    const paymentRadios = document.querySelectorAll('input[name="payment"]');
+    const cardInfo = document.getElementById('card-info');
+    paymentRadios.forEach(radio => {
+      radio.addEventListener('change', function() {
+        if (this.value === 'card') {
+          cardInfo.style.display = 'block';
+        } else {
+          cardInfo.style.display = 'none';
+        }
+      });
+    });
+    // Initialize card info visibility
+    if (document.querySelector('input[name="payment"]:checked').value !== 'card') {
+      cardInfo.style.display = 'none';
+    }
+  </script>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+</body>
+</html>
